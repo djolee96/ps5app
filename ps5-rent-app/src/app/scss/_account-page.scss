@@ -1,0 +1,200 @@
+.account-page{
+    min-height: 550px;
+    width:80%;
+    margin:0px auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 350px;
+    column-gap:5px;
+}
+
+.account-info{
+    grid-column: span 4;
+    grid-row:span 1;
+    position: relative;
+    .logout{
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        width: 100px;
+        height: 25px;
+        border-radius: 10px;
+        background: #FFE002;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+         color: #3B3B3B;
+      
+    }
+   
+    h3{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    div{
+        width: 90%;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        span{
+            color: white;
+            margin-right: 10px;
+        }
+        .change-pass{
+            margin-left: 20px;
+
+            font-size: 9px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.account-bonus{
+    grid-column: span 8;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #FFB606;
+
+    span{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+    }
+    .bonus{
+        margin-top: -10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 2px white;
+    }
+}
+
+.rent-info{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    height: 350px;
+    display: flex;
+    align-items: center;
+
+    .rent-time{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .counter{
+            width: 300px;
+            height: 60px;
+            border: 1px solid red;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-size: 32px;
+                font-weight: bold;
+                color: red;
+            }
+        }
+
+    }
+    .current-rent{
+        width: 40%;
+        height: 100%;
+        h3{
+            margin-top: 35px;
+            margin-bottom: 12px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            display: grid;
+            grid-template-rows: auto;
+           li{
+               margin: 5px 0px 0px 10px;
+               color: white;
+               font-size: 15px;
+           }
+          
+        }
+    }
+}
+
+
+@media(max-width:749px){
+    .account-page{
+    grid-template-rows: repeat(6,200px);
+
+    }  
+
+    .account-info{
+        grid-column: span 12;
+        grid-row-start: 1;
+        grid-row-end: 2;    
+    }
+
+    .account-bonus{
+        grid-column: span 12;
+        grid-row-start:2;
+        grid-row-end: 4;   
+
+    height: 100%;
+        
+        .bonus{
+            margin-top: -10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 2px white;
+        }
+    }
+
+    .rent-info{ 
+        grid-column: span 12;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,min-content);
+        column-gap:5px;
+
+
+        .rent-time{
+            margin-top: 40px;
+            width: 100%;
+            grid-column: span 12;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .current-rent{
+            width: 100%;
+            grid-column: span 12;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            overflow: hidden;
+        }
+    }
+
+}

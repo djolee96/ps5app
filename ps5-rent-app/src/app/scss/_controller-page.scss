@@ -1,0 +1,91 @@
+.controller-page{
+    min-height: 550px;
+    width:80%;
+    margin:0px auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap:10px;
+}
+
+.controller-container{
+    position: relative;
+    margin-top: 10px;
+    height: 550px;
+
+    grid-column: span 4;
+
+
+    box-shadow: 0px -1px 4px #000;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.controller-img{
+    height: 350px;
+    width: 100%;
+}
+.controller-description{
+    height: 200px;
+    width: 100%;
+
+    background: #000;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    .title{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            text-align: center;
+            color:#fff;
+            font-size: 22px;
+            font-weight: bold;
+        }   
+    }
+    .add-controller{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+        .add-button{
+            cursor: pointer;
+
+            align-self: flex-end;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 170px;
+            border-radius: 10px;
+            background:#FFB606;
+            
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3b3b3b;
+            font-weight: bold;
+        }
+        .add-button:hover{
+            background-color: #FFE002;
+        }
+        
+    }
+   
+
+}
+
+
+@media(max-width:749px){
+    .controller-container{
+    grid-column: span 12;
+    }
+    .controller-description{
+        .title{
+            padding-top: 25px;
+        }
+    }
+}

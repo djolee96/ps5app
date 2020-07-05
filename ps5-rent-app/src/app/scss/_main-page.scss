@@ -1,0 +1,330 @@
+.main{
+    min-height: 550px;
+    width:80%;
+    margin:0px auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 110px);
+    column-gap:10px;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.checkout-console-container{
+    grid-column: span 4;
+    grid-row: span 3;
+    .checked-console{
+        box-shadow: 0px 0px 2px white;
+        width: 96%;
+        height: 96%;
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .console-img{
+            width: 100%;
+            height: 100%;
+        }
+        .remove-btn{
+            cursor: pointer;
+            width: 70px;
+            height: 20px;
+            border:1px solid #FFE002;
+            border-radius: 10px;
+            position: absolute;
+            right: 10px;
+            top:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+                color: white;
+                font-size: 10px;
+            
+        }
+        .remove-btn:hover{
+            background: #FFE002;
+           
+                color: #3B3B3B;
+
+           
+        }
+    }
+    .checkout-console{
+        box-shadow: 0px 0px 2px white;
+        width: 96%;
+        height: 96%;
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            cursor: pointer;
+
+            font-size: 100px;
+            font-weight: bold;
+            color: grey;
+        };
+    }
+}
+.checkout-controller-container{
+    grid-column: span 3;
+    grid-row: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .checked-controller{
+        height: 45%;
+        width: 45%;
+        box-shadow: 0px 0px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .controller-img{
+            width: 100%;
+            height: 100%;
+        }
+        .remove-btn{
+            cursor: pointer;
+            width: 40px;
+            height: 15px;
+            border:1px solid #FFE002;
+            border-radius: 10px;
+            position: absolute;
+            right: 10px;
+            top:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+                color: white;
+                font-size: 8px;
+            
+        }
+        .remove-btn:hover{
+            background: #FFE002;
+            
+                color: #3B3B3B;
+
+           
+        }
+    }
+    .checkout-controller{
+        height: 45%;
+        width: 45%;
+        box-shadow: 0px 0px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            cursor: pointer;
+
+            font-size: 40px;
+            font-weight: bold;
+            color: grey;
+        }
+    }
+}
+.checkout-games-container{
+    margin-top: 20px;
+    grid-column: span 12;
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+    display: flex;
+    .checked-game{
+        height: 100%;
+        width: 15%;
+        margin: 3px;
+        box-shadow: 0px 0px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .game-img{
+            width: 100%;
+            height: 100%;
+        }
+        .remove-btn{
+            cursor: pointer;
+            width: 40px;
+            height: 15px;
+            border:1px solid #FFE002;
+            border-radius: 10px;
+            position: absolute;
+            right: 10px;
+            top:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+                color: white;
+                font-size: 8px;
+            
+        }
+        .remove-btn:hover{
+            background: #FFE002;
+           
+                color: #3B3B3B;
+
+        }
+    }
+    .checkout-games{
+        height: 100%;
+        width: 15%;
+        margin: 3px;
+        box-shadow: 0px 0px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            cursor: pointer;
+
+            font-size: 40px;
+            font-weight: bold;
+            color: grey;
+        }
+    }
+}
+.checkout-calculator-container{
+    grid-column: span 5;
+    grid-row: span 3;
+    position: relative;
+    box-shadow: 1px 1px 2px white;
+
+    .duration{
+        width: 100%;
+        span{
+            display: block;
+            padding-left: 5%;
+            padding-top: 10px;
+
+
+            font-size: 16px;
+            font-weight: bold;
+            color:white;
+        };
+        label{
+            color:white;
+            font-size: 12px;
+            margin-top: 5px;
+            transform: rotate(-45deg);
+        }
+        form{
+            margin-top: 15px;
+
+            display: flex;
+            justify-content: space-evenly;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    }
+    .final-price{
+        width: 100%;
+        .total{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed grey;
+            margin:0 auto;
+            margin-top:20px;
+            span{
+                color: white;
+            }
+        }
+        ul{
+            width: 90%;
+            margin:0 auto;
+           
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+
+    }
+    .checkout-btn{
+        position: absolute;
+        right: 5%;
+        bottom: 20px;
+        cursor: pointer;
+        background-color: #FFB606;
+        width: 100px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        
+            color:#3B3B3B;
+            font-weight: bold;
+        
+    }
+    .checkout-btn:hover{
+        background-color: #FFE002;
+
+    }
+}
+
+
+
+@media(max-width:749px){
+  .main{
+    grid-template-rows: repeat(16, 90px);
+
+  }
+
+    .checkout-console-container{
+        margin-top: 20px;
+
+        grid-column: span 12;
+        grid-row-start: 5;
+        grid-row-end: 8;
+    }
+    .checkout-controller-container{
+        margin-top: 20px;
+
+        grid-column: span 12;
+        grid-row-start: 8;
+        grid-row-end: 11;
+        
+    }
+    .checkout-games-container{
+        margin-top: 20px;
+        grid-column: span 12;
+        grid-row-start: 11;
+        grid-row-end: 13;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .checked-game{
+            width: 30%;
+        }
+        .checkout-games{
+            width: 30%;
+        }
+    }
+    .checkout-calculator-container{
+        margin-top: 20px;
+
+        grid-column: span 12;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    
+}
