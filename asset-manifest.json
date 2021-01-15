@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bit-crud/static/css/main.c4e3e2cd.chunk.css",
-    "main.js": "/bit-crud/static/js/main.8962b602.chunk.js",
-    "main.js.map": "/bit-crud/static/js/main.8962b602.chunk.js.map",
-    "runtime-main.js": "/bit-crud/static/js/runtime-main.99f13def.js",
-    "runtime-main.js.map": "/bit-crud/static/js/runtime-main.99f13def.js.map",
-    "static/js/2.a5256ed8.chunk.js": "/bit-crud/static/js/2.a5256ed8.chunk.js",
-    "static/js/2.a5256ed8.chunk.js.map": "/bit-crud/static/js/2.a5256ed8.chunk.js.map",
-    "index.html": "/bit-crud/index.html",
-    "precache-manifest.ade44295bdeb8fcc80568c4c929c1769.js": "/bit-crud/precache-manifest.ade44295bdeb8fcc80568c4c929c1769.js",
-    "service-worker.js": "/bit-crud/service-worker.js",
-    "static/css/main.c4e3e2cd.chunk.css.map": "/bit-crud/static/css/main.c4e3e2cd.chunk.css.map",
-    "static/js/2.a5256ed8.chunk.js.LICENSE.txt": "/bit-crud/static/js/2.a5256ed8.chunk.js.LICENSE.txt"
+    "main.css": "/ps5app/static/css/main.c4e3e2cd.chunk.css",
+    "main.js": "/ps5app/static/js/main.5a874b04.chunk.js",
+    "main.js.map": "/ps5app/static/js/main.5a874b04.chunk.js.map",
+    "runtime-main.js": "/ps5app/static/js/runtime-main.81fbdc3d.js",
+    "runtime-main.js.map": "/ps5app/static/js/runtime-main.81fbdc3d.js.map",
+    "static/js/2.a5256ed8.chunk.js": "/ps5app/static/js/2.a5256ed8.chunk.js",
+    "static/js/2.a5256ed8.chunk.js.map": "/ps5app/static/js/2.a5256ed8.chunk.js.map",
+    "index.html": "/ps5app/index.html",
+    "precache-manifest.fd8dc5b550459d1149cecf5d36218465.js": "/ps5app/precache-manifest.fd8dc5b550459d1149cecf5d36218465.js",
+    "service-worker.js": "/ps5app/service-worker.js",
+    "static/css/main.c4e3e2cd.chunk.css.map": "/ps5app/static/css/main.c4e3e2cd.chunk.css.map",
+    "static/js/2.a5256ed8.chunk.js.LICENSE.txt": "/ps5app/static/js/2.a5256ed8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.99f13def.js",
+    "static/js/runtime-main.81fbdc3d.js",
     "static/js/2.a5256ed8.chunk.js",
     "static/css/main.c4e3e2cd.chunk.css",
-    "static/js/main.8962b602.chunk.js"
+    "static/js/main.5a874b04.chunk.js"
   ]
 }
